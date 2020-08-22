@@ -1,0 +1,25 @@
+{
+  "name": "tech-talk",
+  "version": "1.0.0",
+  "description": "CMS style blog for tech discussions. ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdamota/Tech-Talk.git"
+  },
+  "author": "Briana daMota",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bdamota/Tech-Talk/issues"
+  },
+  "homepage": "https://github.com/bdamota/Tech-Talk#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.3.4"
+  }
+}
