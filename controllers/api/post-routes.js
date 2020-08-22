@@ -11,8 +11,7 @@ router.get('/', (req, res) => {
             'id',
             'post_url',
             'title',
-            'created_at',
-            [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
+            'created_at'
         ],
         order: [['created_at', 'DESC']],
         include: [
@@ -49,8 +48,7 @@ router.get('/:id', (req, res) => {
             'id',
             'post_url',
             'title',
-            'created_at',
-            [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
+            'created_at'
         ],
         include: [
             // include the Comment model to include comments and the authors of those comments
@@ -96,19 +94,6 @@ router.post('/', (req, res) => {
     });
 });
 
-// PUT /api/posts/upvote
-router.put('/upvote', (req, res) => {
-    // make sure the session exists first
-    if (req.session) {
-        // pass session id along with all destructured properties on req.body
-        Post.upvote({ ...req.body, user_id: req.session.user_id }, { Vote, Comment, User })
-        .then(updatedPostData => res.json(updatedPostData))
-        .catch(err => {
-            console.log(err);
-            res.status(400).json(err);
-        });
-    }
-});
 
 // update a post's title
 router.put('/:id', (req, res) => {
