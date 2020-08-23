@@ -1,14 +1,14 @@
 <section>
-  <h2>Create New Post</h2>
+  <h2 class="dashboardposts">Create New Post</h2>
 
   <form class="new-post-form">
     <div>
-      <label for="post-title">Title:</label>
+      <label for="post-title"><strong>Title:</strong></label>
       <input type="text" id="post-title" name="post-title" />
     </div>
     <div>
-      <label for="post">Content:</label>
-      <textarea class="content" id="post" name="post"></textarea>
+      <label for="post"><strong>Content:</strong></label>
+      <textarea id="post" name="post"></textarea>
     </div>
     <button type="submit" class="btn">Create</button>
   </form>
@@ -16,7 +16,7 @@
 
 {{#if posts.length}}
 <section>
-  <h2>Your Posts</h2>
+  <h2 class="dashboardposts">Your Posts</h2>
   <ol>
     {{#each posts as |post|}}
     <li>
