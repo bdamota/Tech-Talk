@@ -161,14 +161,13 @@
   }
   
   .new-post-form input {
-    width: 500px;
+    width: 425px;
   }
 
-  .content {
-    width: 500px;
-    height: 100px;
+  .edit {
+    width: 425px;
   }
-  
+ 
   .edit-post-form {
     margin-bottom: 5%;
   }
