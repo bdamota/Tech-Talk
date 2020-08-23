@@ -6,7 +6,6 @@ const exphbs = require('express-handlebars');
 
 
 const app = express();
-const PORT = process.env.PORT || 3001;
 const session = require('express-session');
 const helpers = require('./utils/helpers');
 const hbs = exphbs.create({ helpers });
