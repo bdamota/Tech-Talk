@@ -13,14 +13,13 @@
   a {
     text-decoration: none;
     color: #225ca3;
-    font-weight: bold;
     transition: color .1s;
   }
   
   a:hover {
     color: #3486eb;
   }
-  
+
   button {
     background-color: #225ca3;
     border: 0;
@@ -35,7 +34,7 @@
   button:hover {
     background-color: #3486eb;
   }
-  
+ 
   .post-list {
     margin: 0;
     padding: 0;
@@ -83,14 +82,19 @@
   }
   
   header h1 {
-    font-size: 1em;
+    color: #225ca3;
+    font-size: larger;
   }
   
   main {
     flex: 1;
     padding: 2% 4%;
   }
-  
+
+  ul {
+      list-style-type: none;
+    } 
+
   .btn-no-style {
     background: none;
     border: none;
@@ -99,14 +103,18 @@
     text-decoration: none;
     color: #225ca3;
     font-size: 100%;
-    font-weight: bold;
+    font-weight: normal;
     transition: color .1s;
-    margin-left: 16px;
+    margin-left: 950px;
   }
   
   .btn-no-style:hover {
     background: none;
     color: #3486eb;
+  }
+
+  .login {
+    margin-left: 1050px;
   }
   
   .delete-post-btn {
@@ -133,15 +141,6 @@
     margin: -1.5% 0 2% 0;
   }
   
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
-  }
-  
   .comment-form {
     margin-bottom: 5%;
   }
@@ -162,17 +161,15 @@
   }
   
   .new-post-form input {
-    width: 300px;
+    width: 500px;
+  }
+
+  .content {
+    width: 500px;
+    height: 100px;
   }
   
   .edit-post-form {
     margin-bottom: 5%;
   }
   
-  footer {
-    border-top: 1px solid #ccc;
-    display: flex;
-    justify-content: center;
-    padding: 1%;
-    font-size: 110%;
-  }
