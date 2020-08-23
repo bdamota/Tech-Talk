@@ -95,11 +95,12 @@ router.post('/', withAuth, (req, res) => {
 });
 
 
-// update a post's title
+// update a post's title and post content 
 router.put('/:id', withAuth, (req, res) => {
     Post.update(
         {
-            title: req.body.title
+            title: req.body.title,
+            post: req.body.post
         },
         {
             where: {
