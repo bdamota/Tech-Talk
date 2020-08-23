@@ -25,7 +25,7 @@
 
   .home {
     color: white;
-    margin-left: 31px;
+    margin-left: 30px;
   }
 
   .home:hover {
@@ -46,6 +46,10 @@
   
   button:hover {
     background-color: #3486eb;
+  }
+
+  .button:focus{
+    outline: 0;
   }
  
   .post-list {
@@ -129,6 +133,9 @@
     background: none;
     color:darkslateblue;
   }
+  .btn-no-style:focus{
+    outline: 0;
+  }
 
   .delete-post-btn {
     background-color: #d41414;
@@ -136,10 +143,6 @@
   
   .delete-post-btn:hover {
     background-color: #ff643d;
-  }
-
-  .dashboardposts {
-    text-decoration: underline;
   }
   
   .post {
