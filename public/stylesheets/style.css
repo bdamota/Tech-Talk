@@ -25,7 +25,7 @@
 
   .home {
     color: white;
-    margin-left: 30px;
+    margin-left: 38px;
   }
 
   .home:hover {
@@ -126,7 +126,7 @@
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
-    margin-left: 875px;
+    margin-left: 850px;
   }
 
   .btn-no-style:hover {
