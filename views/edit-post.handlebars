@@ -12,6 +12,9 @@
       |
       <a href="/post/{{ post.id }}">{{ post.comments.length }} {{ format_plural "comment" post.comments.length }}</a>
     </div>
+    <div>
+      <input name="post-title" type="text" value="{{ post.post }}" />
+    </div>
     <button type="submit">Save post</button>
     <button type="button" class="delete-post-btn">Delete post</button>
   </form>
