@@ -160,11 +160,6 @@
     padding: 8px;
     font-weight: normal;
   }
-
-  .content {
-    width: 600px;
-    height: 600px;
-  }
   
   .edit-link {
     display: block;
