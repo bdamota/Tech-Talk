@@ -9,6 +9,7 @@ A CMS-style tech blog site using MVC paradigm, Handlebars.js, Sequelize and expr
 ## Technologies:
 - HTML5
 - JavaScript
+- CSS
 - Node
 - Express
 - MySQL
